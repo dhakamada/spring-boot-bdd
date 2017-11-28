@@ -16,6 +16,10 @@ public class Product {
 
     private String name;
 
+    public Product(String name) {
+        this.name = name;
+    }
+
     public Product(Long id, String name) {
         this.id = id;
         this.name = name;

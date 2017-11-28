@@ -21,7 +21,7 @@ public class ProductJpaTest {
 
     @Test
     public void creation() {
-        Product product = testEntityManager.persistAndFlush(new Product(null, "Pencil"));
+        Product product = testEntityManager.persistAndFlush(new Product("Pencil"));
         Assertions.assertThat(product.getName()).isEqualTo("Pencil");
         Assertions.assertThat(product.getId()).isNotNull();
         Assertions.assertThat(product.getId()).isGreaterThan(0);
