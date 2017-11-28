@@ -1,10 +1,17 @@
 package com.springboot.bdd.springbootbdd;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
 /**
  * Created by dhakamada on 28/11/17.
  */
+@Entity
 public class Product {
 
+    @Id
+    @GeneratedValue
     private Long id;
 
     private String name;
